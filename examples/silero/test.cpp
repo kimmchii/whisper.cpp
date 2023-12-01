@@ -7,5 +7,6 @@ int main(int argc, char *argv[]){
         return 1;
     }
     std::string audio_file_path = argv[1];
-    perform_vad(audio_file_path);
+    std::vector<Timestamps> hello;
+    hello = PerformVad(audio_file_path);
 }
